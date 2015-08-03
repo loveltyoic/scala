@@ -7,5 +7,10 @@ libraryDependencies ++= Seq(
       "com.typesafe.play" % "play-json_2.10" % "2.4.0-M2",
       "org.scalatest" % "scalatest_2.10" % "2.2.1" % "test",
       "org.twitter4j" % "twitter4j-core" % "4.0.2",
-      "org.twitter4j" % "twitter4j-stream" % "4.0.2"
+      "org.twitter4j" % "twitter4j-stream" % "4.0.2",
+      "org.slf4j" % "slf4j-nop" % "1.7.7",
+      "org.scala-lang" % "scala-library" % "2.10.4",
+      "org.scala-lang" % "scala-reflect" % "2.10.4"
 )
+
+fork in run := true

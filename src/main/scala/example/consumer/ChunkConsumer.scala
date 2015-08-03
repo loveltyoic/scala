@@ -3,7 +3,7 @@ package example.consumer
 import kafka.api.FetchRequestBuilder
 import kafka.consumer.SimpleConsumer
 
-case class ChunkConsumer(topics: List[String], partition: Int = 0, offset: Long = 0L, fetchSize: Int = 100) extends Consumer(topics){
+case class ChunkConsumer(topics: List[String], partition: Int = 0, offset: Long = 0L, fetchSize: Int = 1000) extends Consumer(topics){
 
   private val clientId = kafkaConfig.getCustomString("consumer.clientId")
 

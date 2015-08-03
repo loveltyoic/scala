@@ -22,6 +22,7 @@ trait KafkaConfig extends Properties {
   def getCustomInt(key: String) = typesafeConfig.getInt(key)
 }
 
+
 object KafkaConfig {
 
   val consumerPrefix = "consumer"
